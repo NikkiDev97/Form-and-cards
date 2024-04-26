@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="formulario.css">   
+</head>
+<body>
+    <header>
+       <h1>Formulario de contacto</h1>
+    </header>
+    <section class="contenedor">
+        <form class="formulario" action="https://formspree.io/f/mdoqyvyg" method="post">
+            <div class="div-example">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="div-example">
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="div-example">
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+            </div>
+            <div class="div-example">
+                <input type="text" name="empresa" id="empresa" placeholder="Empresa (opcional)">
+            </div> 
+            <div class="asunto">
+                <label for="asunto">Asunto</label>
+                <select name="asunto" >
+                    <option value="1">Cotiza tu proyecto</option>
+                    <option value="2">¿Tienes una queja?</option>
+                    <option value="3">¿Quieres felicitarnos?</option>
+                    <option value="3">Otro</option>
+                </select>
+            </div>
+            <div class="comentarios">
+                <label for ="comentario">Déjanos tus comentarios</label>
+                <textarea name="comentario" id="comentario" rows="5" cols="30" required>
+                </textarea>
+            </div>
+            <div class="terminos">
+                <label for ="terminos">Acepto términos y condiciones</label>
+                <input type="checkbox" name="terminos" required>
+            </div>
+            <div class="boton">
+                <button type="reset">Resetear</button>
+                <button type="submit">Enviar</
+                <button>
+                <button type="button" onclick="cancelar()">Cancelar</button>
+            </div>    
+        </form>
+        <script> //javascript
+            function cancelar()
+            {
+                alert('Formulario cancelado');
+            }
+        </script>
+    </section>
+    <footer>
+        <h4>Sala 1 Creators Inc.</h4>
+        <hr>
+        <div class="contenedor-footer">
+            <div class="caja">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lunes a viernes: 8 - 5pm</li>
+                    <li>Sábados: 10am - 4pm</li>
+                    <li>Domingos y festivos: 2pm-6pm</li>
+                </ul>
+            </div>
+            <div class="caja">
+                <h4>Oficina</h4>
+                <ul>
+                    <li>Calle 14# 87-98</li>
+                    <li>Tel: +57 99888928</li>
+                    <li>sala1@generation.com</li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
+   

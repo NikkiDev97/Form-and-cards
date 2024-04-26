@@ -1,0 +1,129 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./fondo.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 103vh;  
+}
+header{
+    color: rgb(22, 74, 185);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    width:auto;
+    margin-top: 20px;
+}
+.contenedor{
+    background-color: rgba(251, 251, 255, 0.88);  
+    margin: 7% 13% 10% 13%;
+    border-radius: 25px;
+    box-shadow: 20px -16px rgb(47, 113, 199);
+   
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(107, 109, 110);
+    font-size:small;
+}
+.div-example{
+    width: 70%;
+}
+.div-example input {
+   margin-top: 10px;
+   border-radius: 20px;
+   background-color: rgb(188, 199, 201);
+   border: none;
+   height: 30px;
+   width: 100%;
+   text-align: center;
+}
+.asunto{
+    padding: 15px;
+    width:70%;
+}
+.asunto select{
+    border: solid;
+    border-width: 1px;
+    border-color:  rgb(188, 199, 201);
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 20px;
+    background-color: rgba(188, 199, 201,);
+    color: rgb(107, 109, 110);
+}
+.comentarios{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.terminos{
+    display:flex;
+    flex-direction: row-reverse;
+    gap:10px;
+    margin: 15px;
+}
+footer{
+    background-color: rgb(7, 64, 138, 0.93);
+    color:aliceblue;
+    position:fixed;
+    text-align: center;
+    width:100%;
+    bottom:0;
+    padding: 10px;
+}
+footer h4{
+    margin-bottom: 5px;
+}
+.contenedor-footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+    font-size: smaller; 
+}
+.caja ul{
+    list-style-type:none;
+    
+}
+input:focus{
+    background-color: aliceblue;
+}
+.boton{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin: 5px 10px 10px 5px;
+}
+button{
+    border: none;
+    color: aliceblue;
+    background-color: rgb(47, 113, 199);
+    padding: 3px 9px;   
+}
+button:hover{
+    border: solid;
+    border-width: 1px;
+    border-color:black;
+    background-color: transparent;
+    color: black;
+    transition-duration:0.7s  ;
+}
+@media(min-width:667px){
+    body{
+    width: 100%;
+    height: 180vh;   
+    }   
+    
+}
